@@ -3,111 +3,194 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title> EAGLE - The King of the Skies</title>
+<title>EAGLE - The King of the Skies</title>
 <style>
 /* Allgemeine Stile */
-body {
+body, html {
 margin: 0;
+padding: 0;
 font-family: Arial, sans-serif;
-background-color: #f4f4f4;
-color: #333;
+background: linear-gradient(to bottom, #0D1B2A, #1B263B);
+color: #FFFFFF;
+overflow-x: hidden;
 }
+
+/* Header */
 header {
-background: #004080;
-color: #fff;
-text-align: center;
+background: #14213D;
 padding: 20px 0;
+text-align: center;
 }
 header h1 {
 margin: 0;
+font-size: 2.5em;
 }
+header p {
+font-size: 1em;
+margin-top: 5px;
+}
+
+/* Hero-Sektion */
 .hero {
 text-align: center;
-padding: 50px 20px;
-background: #e0f7fa;
+padding: 100px 20px;
+background: url('https://via.placeholder.com/1920x600') no-repeat center center/cover;
 }
 .hero h2 {
-margin: 0 0 20px;
+font-size: 3em;
+margin-bottom: 10px;
 }
-.content {
-padding: 30px 20px;
-max-width: 800px;
-margin: auto;
+.hero p {
+font-size: 1.2em;
+margin-bottom: 20px;
 }
-.content p {
-font-size: 1.1em;
-line-height: 1.6;
-}
-.cta {
-text-align: center;
-margin: 30px 0;
-}
-.cta button {
-background: #ff9800;
+.hero .cta {
+background: #E63946;
 color: white;
+text-decoration: none;
 padding: 10px 20px;
 font-size: 1em;
-border: none;
 border-radius: 5px;
-cursor: pointer;
+transition: background 0.3s;
 }
-.cta button:hover {
-background: #f57c00;
+.hero .cta:hover {
+background: #D62839;
 }
-footer {
+
+/* Über uns */
+.about {
 text-align: center;
-padding: 10px 0;
-background: #004080;
-color: #fff;
-margin-top: 30px;
+padding: 50px 20px;
+background: #1B263B;
+}
+.about h3 {
+font-size: 2em;
+margin-bottom: 20px;
+}
+.about p {
+font-size: 1em;
+max-width: 800px;
+margin: 0 auto;
+line-height: 1.5;
+}
+
+/* Tokenomics */
+.tokenomics {
+text-align: center;
+padding: 50px 20px;
+background: #0D1B2A;
+}
+.tokenomics h3 {
+font-size: 2em;
+margin-bottom: 20px;
+}
+.tokenomics .details {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+gap: 20px;
+}
+.tokenomics .details div {
+background: #14213D;
+padding: 20px;
+border-radius: 5px;
+min-width: 200px;
+}
+.tokenomics .details div h4 {
+margin: 0 0 10px;
+font-size: 1.2em;
+}
+
+/* Social Media */
+.socials {
+text-align: center;
+padding: 50px 20px;
+background: #1B263B;
+}
+.socials h3 {
+font-size: 2em;
+margin-bottom: 20px;
 }
 .socials a {
 margin: 0 10px;
 text-decoration: none;
-color: #004080;
-font-size: 1.2em;
+color: white;
+font-size: 1.5em;
+}
+.socials a:hover {
+color: #E63946;
+}
+
+/* Footer */
+footer {
+background: #14213D;
+text-align: center;
+padding: 10px 0;
+margin-top: 30px;
+}
+footer p {
+margin: 0;
+font-size: 0.9em;
 }
 </style>
 </head>
 <body>
-<!-- Header-Bereich -->
+
+<!-- Header -->
 <header>
-<h1>?? EAGLE - The King of the Skies</h1>
-<p>The Memecoin that soars above all others</p>
+<h1>🦅 EAGLE</h1>
+<p>The King of the Skies in the Cryptoverse</p>
 </header>
 
-<!-- Hero-Sektion -->
+<!-- Hero Section -->
 <section class="hero">
 <h2>Welcome to EAGLE</h2>
-<p>Experience freedom, strength, and vision with the EAGLE Memecoin in the XRP ecosystem.</p>
+<p>Your gateway to freedom, strength, and vision on the XRP Ledger.</p>
+<a href="https://xmagnetic.org" class="cta">Get Started Now</a>
 </section>
 
-<!-- Content-Sektion -->
-<section class="content">
+<!-- About Section -->
+<section class="about">
 <h3>About EAGLE</h3>
 <p>
-EAGLE is more than just a memecoin – it’s a symbol of freedom, strength, and vision in the XRP ecosystem. Inspired by the majestic eagle, EAGLE represents soaring to new heights in the digital financial universe.
-</p>
-<p>
-Join a passionate community that values innovation, fun, and growth. With lightning-fast transactions and low fees thanks to the XRP blockchain, EAGLE is your ticket to financial freedom.
+EAGLE is more than just a memecoin – it represents freedom, strength, and vision. Built on the XRP Ledger, EAGLE offers fast transactions, low fees, and a vibrant community.
 </p>
 </section>
 
-<!-- Call-to-Action -->
-<section class="cta">
-<button onclick="window.location.href='https://xmagnetic.org'">Get Started Now</button>
+<!-- Tokenomics Section -->
+<section class="tokenomics">
+<h3>Tokenomics</h3>
+<div class="details">
+<div>
+<h4>Total Supply</h4>
+<p>1,000,000,000 EAGLE</p>
+</div>
+<div>
+<h4>Liquidity Pool</h4>
+<p>50% Locked</p>
+</div>
+<div>
+<h4>Community Allocation</h4>
+<p>30%</p>
+</div>
+<div>
+<h4>Marketing</h4>
+<p>10%</p>
+</div>
+</div>
 </section>
 
-<!-- Social Media Links -->
-<section class="socials" style="text-align: center; margin: 20px 0;">
+<!-- Social Media Section -->
+<section class="socials">
 <h3>Join Our Community</h3>
-<a href="https://t.me/eaglecommunity" target="_blank">Telegram</a>
 <a href="https://twitter.com/eagleofficial" target="_blank">Twitter</a>
+<a href="https://t.me/eaglecommunity" target="_blank">Telegram</a>
 </section>
 
 <!-- Footer -->
 <footer>
 <p>&copy; 2024 EAGLE Memecoin. All Rights Reserved.</p>
 </footer>
+
 </body>
 </html>
